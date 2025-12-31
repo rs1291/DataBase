@@ -8,9 +8,17 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
   "dependencies": {
     "mysql": "^2.18.1",
     "mysql2": "^3.16.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rs1291/DataBase.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rs1291/DataBase/issues"
+  },
+  "homepage": "https://github.com/rs1291/DataBase#readme",
+  "description": ""
 }
