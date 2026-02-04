@@ -1,0 +1,25 @@
+CREATE TABLE IF NOT EXISTS PRODUCTS(
+    PRODUCT_ID TEXT,
+    PRODUCT_NAME TEXT,
+    SUPPLIER_ID TEXT,
+    CATEGORY_ID TEXT,
+    UNIT_TEXT,
+    PRICE REAL
+);
+
+INSERT INTO PRODUCTS (PRODUCT_ID, PRODUCT_NAME, SUPPLIER_ID, CATEGORY_ID, UNIT_TEXT, PRICE) VALUES
+('P1', 'Laptop', 'S1', 'C1', '10 boxes x 20 pcs', 800.00),
+('P2', 'Smartphone', 'S2', 'C1', '15 boxes x 30 pcs', 600.00),
+('P3', 'Tablet', 'S3', 'C2', '20 boxes x 25 pcs', 300.00),
+('P4', 'Monitor', 'S4', 'C2', '5 boxes x 10 pcs', 200.00),
+('P5', 'Keyboard', 'S5', 'C3', '50 boxes x 100 pcs', 50.00),
+('P6', 'Mouse', 'S5', 'C3', '60 boxes x 120 pcs', 25.00);
+
+SELECT COUNT(PRODUCT_ID) AS PRODUCT_COUNT
+FROM PRODUCTS;
+
+SELECT AVG(PRICE) AS AVERAGE_PRICE
+FROM PRODUCTS;
+
+SELECT SUM(PRICE) AS TOTAL_PRICE
+FROM PRODUCTS;
